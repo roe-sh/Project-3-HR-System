@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page name</title>
+
+    <!-- navbar and footer CSS. DON'T change anything in them unless agreed upon with the whole team. -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <!-- your CSS link. please create your CSS file in the CSS folder. -->
+     <link rel="stylesheet" href="../CSS/Feedback.css">
+
+</head>
+<body>
+    
+    <!-- navbar HTML. DON'T change anything here unless agreed upon with the whole team. -->
+
+    <nav class="navbarContainer navbar navbar-expand-lg navbar-light">
+        <img src="../Images/Logo03.PNG" class="navbar-brand" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+    
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link white" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" id="service" href="servicepage.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="aboutsection.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="contactsection.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" id="loginLink">
+                    <a class="nav-link white" href="login.html">Login</a>
+                </li>
+                <li class="nav-item" id="registerLink">
+                    <a class="nav-link white" href="signup.html">Register</a>
+                </li>
+                <li class="nav-item dropdown" id="userDropdown" style="display: none;">
+                    <a class="nav-link white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Welcome, <span id="userName"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profilePage0.html">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="logout" class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- your HTML --><!-- please remove the div first -->
+    <h1>Employee's Feedback</h1>
+    <a id="toGoback" href="servicepage.html"><button id="backbtn"> <i id="backarrow" class="fa-solid fa-chevron-left" style="color: #ffa726;"></i>Back</button></a>
+    <div id="paginationContainer">
+       <button id="prevPage" onclick="prevPage()">Previous</button>
+       <span id="pageInfo"></span>
+       <button id="nextPage" onclick="nextPage()">Next</button>
+   </div>
+   <div id="cardsContainer"></div>
+
+    <!-- footer HTML. DON'T change anything here unless agreed upon with the whole team. -->
+    <footer>
+        <div id="footerLogoCon"><img id="footerLogo" src="../Images/Logo03.PNG" alt=""></div>
+        <div id="footerLinksCon">
+            <a href="../index.html">Home</a>
+            <a href="aboutsection.html">About us</a>
+            <a href="contactsection.html">Contact us</a>
+            
+        </div>
+        <div id="footerIconsCon">
+            <a href="mailto:info@example.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+            <a href="tel:+1234567890"><i class="fa-solid fa-square-phone" style="color: #ffffff;"></i></a>
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;" onclick="map()"></i><br>
+            <iframe class="iframeMap" id="footerMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2269.1769877446627!2d35.84781971244067!3d32.55253273852401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c7715f2c2e7ab%3A0x51755840c8ddbefd!2sOrange%20Digital%20Village%20Irbid!5e0!3m2!1sen!2sjo!4v1718978038827!5m2!1sen!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+          </div>
+        <div id="copyright">
+            <p class="copyright">
+                Copyright &copy;2024 All rights reserved
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- navbar and footer JS. DON'T change anything in them unless agreed upon with the whole team. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../JavaScript/navbarafter.js"></script>
+    <script src="../JavaScript/footer.js"></script>
+
+
+    <!-- your JS and/or JSON link. please create your JS file in the JS folder.-->
+     <script src="../JavaScript/Feedback.js"></script>
+     <script src="../JavaScript/contactsection.js"></script>
+
+</body>
+</html>

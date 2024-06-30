@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+}
+
+.sortIcon {
+    display: inline;
+}
+
+#employeesInfoCon {
+    display: flex;
+    flex-direction: column;
+}
+#employeesInfoCon h1 {
+    margin-top: 1.25em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #003366;
+    font-size: 3em;
+    font-weight: 800;
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 2em;
+    align-content: center;
+    text-shadow: 0 7px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#employeesInfo{
+    margin: 1em auto 3em;
+    background-color: white;
+    width: 90%;
+    text-align: center;
+}
+
+#searchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1em 0;
+    position: relative;
+    margin-left: 60px;
+
+}
+#errorMessage {
+    position: absolute;
+    top: 3.6em;
+    left: 10em;
+    color: red;
+    font-size: 0.8em;
+}
+#searchName, #searchID, #searchGender {
+    width: 15em;
+    margin: 0 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#searchContainer p {
+    margin: 0 1em;
+
+}
+#tableContainer {
+    height: 33em;
+    margin-bottom: 20px;
+}
+#employeesInfo {
+    overflow: scroll;
+    overflow-x:auto;
+}
+table.table.table-hover tbody tr {
+    transition: 0.5s;
+
+}
+table.table.table-hover tbody tr:hover {
+    background-color: #e698245e;
+} 
+tr td{
+    font-weight: 500;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+#backbtn{
+    background-color:#f1f1f1;
+    border:1px solid #FFA726 ;
+    color:#FFA726;
+    font-size:1.2em ;
+     font-weight:500;
+    width:120px;
+    height: 2em;
+    text-align:left;
+    border-radius: 0.7em;
+    margin-bottom: 0.5em;
+    margin-left: 3.9em;
+    /* position:absolute;
+  left: 0.5em;
+    top:12.5em; */
+    align-items: center;
+}
+#backbtn a{
+    /* color:black; */
+    text-decoration: none;
+    width: auto;
+}
+
+
+#backarrow{
+  margin-right:18px;
+  margin-left:10px;
+ text-align: left;
+}
+
+
+#toGoBack {
+    display: inline !important;
+    width: 120px;
+}
+@media screen and (max-width: 426px){
+    #searchContainer {
+        justify-content: center;
+    }
+    #tableContainer{
+            display: flex;
+            width: auto;
+            justify-content: flex-start;
+            /* MARGIN: auto; */
+            align-items: baseline;
+            
+        }
+        #tableContainer {
+            height: 500px;
+            margin-bottom: 20px;
+            width: 120%;
+        }
+        .navbarContainer{
+            width: 120%;
+    
+        }
+        footer {
+            width: 120%;
+        }
+    
+    
+}
